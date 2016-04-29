@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="catWin" closable="true" title="Catalogo - ${arg.title}" border="1" width="50%"
+            apply="com.ra.controllers.CatController">
+        <toolbar id="catToolbar">
+            
+        </toolbar>
+        <div id="container-zul">
+            <include src="${arg.cat}"/>
+        </div>
+    </window>
+</zk>

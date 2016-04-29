@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <grid id="grid-modulos">
+        <columns>
+            <column width="50%"/>
+            <column />
+        </columns>
+        <rows>
+            <row>
+                <label value="Nombre Modulo"/>
+                <textbox id="nameModulo" value=""/>
+            </row>
+        </rows>
+    </grid>
+</zk>

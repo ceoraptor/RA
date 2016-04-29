@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+index.zul
+
+{{IS_NOTE
+	Purpose:
+		
+	Description:
+		
+	History:
+		Mon Jun 12 21:23:35     2006, Created by tomyeh
+		Fri May 01 04:36:35     2009, Modified by stera
+}}IS_NOTE
+
+Copyright (C) 2006 Potix Corporation. All Rights Reserved.
+
+{{IS_RIGHT
+}}IS_RIGHT
+-->
+<?init class="com.ra.utils.InitPage" ?>
+<zk xmlns="http://www.zkoss.org/2005/zul">
+    <window id="principal" border="normal"
+        apply="com.ra.controllers.MainController">
+        <borderlayout height="700px">
+            <north height="90px">
+                <vlayout>
+                    <div>
+                        <hlayout>
+                            <label value="Registro de Actividades"/>
+                            <space/>
+                            <label value="You are using ZK version: ${desktop.webApp.version}"/>
+                        </hlayout>
+                    </div>
+                    <menubar autodrop="true">
+                        <menu label="Nueva">
+                            <menupopup>
+                                <menuitem label="Actividad"/>
+                            </menupopup>
+                        </menu>
+                        <menu label="Catalogos">
+                            <menupopup>
+                                <menuitem id="catModulos" label="Modulos"/>
+                                <menuitem id="catActividades" label="Actividad"/>
+                                <menuitem id="catTipos" label="Tipos"/>
+                            </menupopup>
+                        </menu>
+                    </menubar>
+                </vlayout>
+            </north>
+            <center id="contenido">
+                
+            </center>
+        </borderlayout>
+    </window>
+</zk>
